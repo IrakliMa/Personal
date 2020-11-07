@@ -7,6 +7,12 @@ body,html{
     left:50%;
     -ms-transform:translate(-50%,-50%);
     transform:translate(-50%,-50%)
+    /* disabling selection - not needed here and to prevent auto selection on taps */
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 ul{
     margin:auto;
