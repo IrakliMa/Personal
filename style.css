@@ -1,142 +1,72 @@
-body,html{
-    margin:0;
-    font:bold 14px 'Open Sans',arial,sans-serif;
-    background:#000;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -ms-transform:translate(-50%,-50%);
-    transform:translate(-50%,-50%)
+body,
+html {
+	margin: 0;
+	font: bold 14px "Open Sans", arial, sans-serif;
+	background: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	/* disabling selection - not needed here and to prevent auto selection on taps */
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
 }
-ul{
-    margin:auto;
-    padding:0;
-    list-style:none;
-    display:table;
-    text-align:center
-/* disabling selection - not needed here and to prevent auto selection on taps */
-    user-select: none; /* supported by Chrome and Opera */
-   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-   -moz-user-select: none; /* Firefox */
-   -ms-user-select: none; /* Internet Explorer/Edge */
+ul {
+	margin: auto;
+	padding: 0;
+	list-style: none;
+	display: table;
+	text-align: center;
 }
-li{
-    display:table-cell;
-    position:relative;
-    padding:15px 0
+li {
+	display: table-cell;
+	position: relative;
+	padding: 15px 0;
 }
-.text{
-  text-align: center;
-  font-size: 70px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-image: url('https://i.imgur.com/VpL4VW3.jpg');
-  letter-spacing: 10px;
-  font-weight: 700;
-  color: white
-/* disabling selection - not needed here and to prevent auto selection on taps */
-    user-select: none; /* supported by Chrome and Opera */
-   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-   -moz-user-select: none; /* Firefox */
-   -ms-user-select: none; /* Internet Explorer/Edge */
+.text {
+	text-align: center;
+	font-size: 70px;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-image: url("https://i.imgur.com/VpL4VW3.jpg");
+	letter-spacing: 10px;
+	font-weight: 700;
+	color: #eee;
 }
-a{
-    color:#fff;
-    text-transform:uppercase;
-    text-decoration:none;
-    letter-spacing:.15em;
-    display:inline-block;
-    padding:15px 20px;
-    position:relativebody,html{
-    margin:0;
-    font:bold 14px 'Open Sans',arial,sans-serif;
-    background:#000;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -ms-transform:translate(-50%,-50%);
-    transform:translate(-50%,-50%)
+a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.15em;
+	display: inline-block;
+	padding: 15px 20px;
+	position: relative;
 }
-ul{
-    margin:auto;
-    padding:0;
-    list-style:none;
-    display:table;
-    text-align:center
+a:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #fff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
 }
-li{
-    display:table-cell;
-    position:relative;
-    padding:15px 0
+a:hover:after {
+	width: 100%;
+	left: 0;
 }
-.text{
-  text-align: center;
-  font-size: 70px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-image: url('https://i.imgur.com/VpL4VW3.jpg');
-  letter-spacing: 10px;
-  font-weight: 700;
-	  color: white
-}
-a{
-    color:#fff;
-    text-transform:uppercase;
-    text-decoration:none;
-    letter-spacing:.15em;
-    display:inline-block;
-    padding:15px 20px;
-    position:relative
-}
-a:after{
-    background:none repeat scroll 0 0 transparent;
-    bottom:0;
-    content:"";
-    display:block;
-    height:2px;
-    left:50%;
-    position:absolute;
-		background: #fff;
-    transition:width .3s ease 0s,left .3s ease 0s;
-    width:0
-}
-a:hover:after{
-    width:100%;
-    left:0
-}
-@media screen and (max-width:600px){
-    ul{
-        margin-top:40px
-    }
-    li{
-        display:table-row
-    }
-}
-
-}
-a:after{
-    background:none repeat scroll 0 0 transparent;
-    bottom:0;
-    content:"";
-    display:block;
-    height:2px;
-    left:50%;
-    position:absolute;
-		background: #fff;
-    transition:width .3s ease 0s,left .3s ease 0s;
-    width:0
-}
-a:hover:after{
-    width:100%;
-    left:0
-}
-@media screen and (max-width:600px){
-    ul{
-        margin-top:40px
-    }
-    li{
-        display:table-row
-    }
+@media only screen and (max-width: 600px) {
+	ul {
+		margin-top: 40px;
+	}
+	li {
+		display: table-row;
+	}
 }
