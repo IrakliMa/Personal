@@ -7,12 +7,6 @@ body,html{
     left:50%;
     -ms-transform:translate(-50%,-50%);
     transform:translate(-50%,-50%)
-    /* disabling selection - not needed here and to prevent auto selection on taps */
-    user-select: none; /* supported by Chrome and Opera */
-   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-   -moz-user-select: none; /* Firefox */
-   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 ul{
     margin:auto;
@@ -20,6 +14,12 @@ ul{
     list-style:none;
     display:table;
     text-align:center
+/* disabling selection - not needed here and to prevent auto selection on taps */
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 li{
     display:table-cell;
@@ -34,7 +34,13 @@ li{
   background-image: url('https://i.imgur.com/VpL4VW3.jpg');
   letter-spacing: 10px;
   font-weight: 700;
-	  color: white
+  color: white
+/* disabling selection - not needed here and to prevent auto selection on taps */
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 a{
     color:#fff;
